@@ -49,19 +49,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="form-group">
+            <div class="col-md-6">
                 <label asp-for="Cant_disponible" class="control-label"></label>
                 <input asp-for="Cant_disponible" class="form-control" />
                 <span asp-validation-for="Cant_disponible" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+        </div>
+        <div class="form-group mt-2">
+            <input type="submit" value="Create" class="btn btn-block btn-lg btn-primary" />
         </div>
     </form>
 </div>
 
 <div>
-    <a class="btn btn-block btn-lg btn-info" asp-action="Index">Back to List</a>
+    <a class="btn  btn-info" asp-action="Index">Regresar a la lista</a>
 </div>
 
