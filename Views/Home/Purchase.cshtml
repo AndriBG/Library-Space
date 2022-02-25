@@ -1,0 +1,65 @@
+﻿@model Library_Space.Models.Books
+
+@{
+    ViewData["Title"] = "Purchase";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Purchase</h1>
+
+<h4>Books</h4>
+<hr />
+<div class="">
+        <form asp-action="Purchase">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="idlibro" class="control-label"></label>
+                    <input asp-for="idlibro" class="form-control" />
+                    <span asp-validation-for="idlibro" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="nombre" class="control-label"></label>
+                    <input asp-for="nombre" class="form-control" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="autor" class="control-label"></label>
+                    <input asp-for="autor" class="form-control" />
+                    <span asp-validation-for="autor" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="genero" class="control-label"></label>
+                    <input asp-for="genero" class="form-control" />
+                    <span asp-validation-for="genero" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="precio" class="control-label"></label>
+                    <input asp-for="precio" class="form-control" />
+                    <span asp-validation-for="precio" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="editorial" class="control-label"></label>
+                    <input asp-for="editorial" class="form-control" />
+                    <span asp-validation-for="editorial" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cant_disponible" class="control-label"></label>
+                <input asp-for="Cant_disponible" class="form-control" />
+                <span asp-validation-for="Cant_disponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

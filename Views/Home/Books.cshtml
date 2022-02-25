@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Books</h1>
+<h1 style="color:green"> Lista De Libros </h1>
+<hr style="color: #0056b2;" />
+
+<br />
+<div class="row ml-1">
+    <a href="ComprarLibro" class="btn btn-info ml-3"> Comprar</a>
+
+</div>
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Autor</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Editorial</th>
+            <th>Genero</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>La Mañona</td>
+                <td>Juan Bosh</td>
+                <td>1500</td>
+                <td>14</td>
+                <td>Anonimo</td>
+                <td>Narrativo</td>
+                <td>
+                    <i class="btn btn-success text-light fa-solid fa-magnifying-glass"></i>
+                    <i class="btn btn-info text-light fa-solid fa-cart-shopping"></i>
+                </td>
+            </tr>
+    </tbody>
+</table>
+
